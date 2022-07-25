@@ -1,0 +1,287 @@
+body {
+	background-color: #ADD8E6;
+	color: #191970;
+}
+
+.loading_overlay {
+	background: #000 url('/images/loading.gif') no-repeat center;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	color: #000;
+	display: none;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+
+.navbar-collapse .container-add-service {
+	padding: 7px 0px;
+	display: inline-block;
+}
+
+.navbar-collapse .container-add-service .btn-add-service {
+	margin: 0px auto;
+}
+
+.navbar-collapse .container-add-payment {
+	padding: 7px 0px;
+	display: inline-block;
+}
+
+.navbar-collapse .container-add-payment .btn-add-service {
+	margin: 0px auto;
+}
+
+.container {
+	/*background-color: #87CEEB;*/
+	/*padding-bottom: 15px;*/
+}
+
+.container .panel-login {
+	margin-top: 150px;
+}
+
+.container .notification-container {
+}
+
+.container .notification-container .notification {
+	min-height: 50px;
+	background-color: #fff;
+	border-left: 3px solid #87CEEB;
+	padding: 15px 0 15px 20px;
+	margin-bottom: 15px;
+}
+
+.container .notification-container .notification.success {
+	border-left: 3px solid #008000;
+	color: #008000;
+}
+
+.container .notification-container .notification.danger {
+	border-left: 3px solid #800000;
+	color: #800000;
+}
+
+.container .notification-container .notification span {
+	font-weight: bold;
+}
+
+.container .module-header h2 {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.container .module-header a {
+	margin: 0 10px 15px;
+}
+
+.container .client-container .client-table-box ul.pagination {
+	margin: 0;
+}
+
+.container .client-container .client-form-box fieldset {
+	border: 1px solid #191970;
+	padding: 10px;
+	margin: 0 5px;
+	height: 100%;
+}
+
+.container .client-container .client-form-box fieldset legend{
+	width: inherit;
+	padding: 0 10px;
+	border-bottom: 0;
+	color: #191970;
+	margin-bottom: 5px;
+}
+
+.container .client-container .client-form-box fieldset ul.client-form-tabs {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #191970;
+}
+
+
+.container .client-container .client-form-box fieldset ul.client-form-tabs li a {
+	color: #191970;
+}
+.container .client-container .client-form-box fieldset ul.client-form-tabs li a:hover {
+	background-color: #87CEEB;
+	color: #191970;
+	border-bottom: 1px solid #191970;
+}
+
+.container .client-container .client-form-box fieldset ul.client-form-tabs li.active a {
+	background-color: #191970;
+	color: #fff;
+}
+
+.container .client-container .client-form-box fieldset ul.client-form-tabs li.disabled a {
+	background-color: #778899;
+	color: #B0C4DE;
+}
+
+.container .filter-container {
+	border: 1px solid #ddd;
+	margin-bottom: 15px;
+	padding: 15px;
+	background-color: #eee;
+}
+
+.container .filter-container legend {
+	width: auto;
+	border: 0;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.container .filter-container .checkbox-dates {
+	margin-top: 30px;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.container .filter-container .form-dates {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+.container .filter-container .form-dates div {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/**
+ * Tabelas
+ */
+.container table {
+	font-weight: bold
+}
+
+.container table .table-history {
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+.container table thead th {
+	background-color: #DCDCDC !important;
+}
+
+.container table thead th.col-actions {
+	text-align: center;
+	/*background-color: #808080 !important;*/
+}
+
+.container table tbody tr {
+	background-color: #fff;
+}
+
+.container table tbody tr.service-delivered {
+	background-color: #90EE90;
+	color: #fff;
+}
+
+.container table tbody tr.service-ready {
+	background-color: #87CEEB;
+	color: #fff;
+}
+
+.container table tbody tr.service-late {
+	background-color: #B22222;
+	color: #fff;
+}
+
+.container table tbody td.col-actions {
+	width: content;
+	text-align: center;
+	background-color: #eee !important;
+}
+
+.container table tbody td.col-actions a {
+	margin: 5px;
+	font-size: 16px;
+}
+
+.container table tbody td.col-actions a[data-action=delivery] {
+	color: #2ecc71;
+}
+
+.container table tbody td.col-actions a[data-action=edit] {
+	color: #f1c40f;
+}
+
+.container table tbody td.col-actions a[data-action=remove] {
+	color: #e74c3c;
+}
+
+.container table tfoot td {
+	background-color: #DCDCDC !important;
+}
+
+.container table tfoot td .history-balance{
+	font-weight: bold;
+	font-size: 16px
+}
+
+/**
+ * Formulário de serviços
+ */
+.service-container {
+	height: 300px;
+    overflow-y: scroll
+}
+
+.service-container .add-service-item a {
+	margin-left: 15px;
+}
+
+.service-container .item-group label {
+	display: block;
+	margin-left: 15px;
+}
+
+.service-container .item-group select {
+	display: inline-block;
+	width: 94%;
+}
+
+/**
+ * Modal serviço
+ */
+@media (min-width: 1200px) {
+	#modal-service .modal-lg {
+		width: 1170px;
+	}
+}
+
+.modal-message-overflow {
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.modal-message-overflow span {
+	width: fit-content;
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#modal-service .modal-content .modal-body .service-total {
+	font-size: 20px;
+	font-weight: bold;
+	color: #0a0;
+}

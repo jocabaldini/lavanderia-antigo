@@ -1,0 +1,1 @@
+{!! Form::hidden('trigger-service', 0, ['class' => 'service-trigger']) !!}
